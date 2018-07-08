@@ -31,10 +31,9 @@ end
 
 def initial_round
   # code #initial_round here
-  card1 = deal_card
-  card2 = deal_card
-  card1 += card2
-  display_card_total(card1)
+  round1 = deal_card + deal_card
+  display_card_total(round1)
+  return round1
 end
 
 def hit?(n)
