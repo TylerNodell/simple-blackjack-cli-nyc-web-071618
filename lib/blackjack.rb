@@ -38,13 +38,12 @@ end
 
 def hit?(n)
   # code hit? here
-  choice = prompt_user
+  prompt_user
+  choice = get_user_input
   if choice = "h"
-    newcard = deal_card
-    puts newcard
-    n += newcard
+    n += deal_card
   elsif choice = "s"
-    return
+    n
   end
 end
 
