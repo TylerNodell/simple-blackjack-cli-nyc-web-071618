@@ -5,7 +5,7 @@ end
 
 def deal_card
   # code #deal_card here
-  Random.new(1..11)
+  random.new(1..11)
 end
 
 def display_card_total(n)
