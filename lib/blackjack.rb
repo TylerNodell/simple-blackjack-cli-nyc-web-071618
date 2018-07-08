@@ -36,14 +36,13 @@ def initial_round
   return round1
 end
 
-def hit?(n)
-  # code hit? here
+def hit?(card_total)
   prompt_user
-  choice = get_user_input
-  if choice = "h"
-    n += deal_card
-  elsif choice = "s"
-    n
+  input = get_user_input
+  if input == 'h'
+    card_total += deal_card
+  elsif input == 's'
+    card_total
   end
 end
 
